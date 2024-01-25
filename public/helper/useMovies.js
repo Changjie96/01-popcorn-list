@@ -9,14 +9,13 @@ export function useMovies(query) {
   const [error, setError] = useState("");
 
   useEffect(function() {
-    // callback?.();
     const controller = new AbortController();
 
     async function fetchMovies() {
       try {
         setIsLoading(true);
         setError("");
-        const res = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+        const res = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
         {signal: controller.signal});
 
         if(!res.ok)
