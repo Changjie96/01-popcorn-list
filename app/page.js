@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useRef, useState } from "react";
-import StarRating from '/home/changjie/code/react-project/01-popcorn-list/public/helper/StarRating.js';
-import { useMovies } from "/home/changjie/code/react-project/01-popcorn-list/public/helper/useMovies.js";
-import { useLocalStorageState } from "/home/changjie/code/react-project/01-popcorn-list/public/helper/useLocalStorageState.js";
-import { useKey } from "/home/changjie/code/react-project/01-popcorn-list/public/helper/useKey.js";
+import StarRating from "@/public/helper/StarRating";
+import { useMovies } from "@/public/helper/useMovies";
+import { useLocalStorageState } from "@/public/helper/useLocalStorageState";
+import { useKey } from "@/public/helper/useKey";
 import Image from "next/image";
 
 const average = (arr) =>
